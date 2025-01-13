@@ -1,0 +1,16 @@
+Инструкция
+
+1. Скачиваем docker desktop и регистрируемся в нём через github
+2. Открываем wsl и копируем туда команду: "git clone https://github.com/kristinaphilippova/labs_1"
+3. Переходим в папку, куда был склонирован репозиторий: "cd labs_1"
+4. Создание в этой папке файла без расширения под названием Dockerfile
+5. Заполняем файл в режиме блокнота следующим содержимым:
+
+FROM python:3.9-slim
+WORKDIR /app
+COPY . /app
+CMD ["python", "program.py"]
+
+6. Вставляем в wsl команду: "docker build -t labimage ."
+7. Запускаем контейнер следующей командой: "sudo docker run -it --name labcontainer labimage"
+8. Программа запустилась
