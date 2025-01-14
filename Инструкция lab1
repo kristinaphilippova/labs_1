@@ -2,9 +2,9 @@
 
 1. Запустить wsl
 2. Ввести команды:
-git clone https://github.com/kristinaphilippova/labs.git
+git clone https://github.com/kristinaphilippova/labs_1.git
 pwd
-cd labs.git
+cd labs_1.git
 4. Ввести команду:
 python3 program.py
-5. Водим данные, которые требует программа
+5. Вводим данные, которые требует программа
